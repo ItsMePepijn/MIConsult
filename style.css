@@ -161,7 +161,7 @@ li a:hover {
   }
 }
 
-@media only screen and (max-width: 1500) {
+@media only screen and (max-width: 1500px) {
   header{
     font-size: 5.2em;
   }
