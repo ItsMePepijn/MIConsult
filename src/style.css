@@ -86,14 +86,19 @@ blockquote p {
   transition: var(--transition-speed);
 }
 
-.right {
-  grid-column: 6 / 12;
-}
-
 .light {
   color: black;
   background-color: var(--light-bg);
+}
 
+.firstLight{
+  color: black;
+  background-color: var(--light-bg);
+}
+
+.leftLight{
+  color: black;
+  background-color: var(--light-bg);
 }
 
 body{
@@ -103,7 +108,7 @@ body{
 }
 
 
-ul {
+.navbar {
   transition: var(--transition-speed);
   list-style-type: none;
   margin: 0;
@@ -123,7 +128,7 @@ ul {
   align-items: center;
 }
 
-li {
+.navbar > li {
   float: left;
   box-shadow: rgba(2, 8, 20, 0.18) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.14) 0px 0.175em 0.5em;
   margin-left: 50px;
@@ -131,7 +136,7 @@ li {
   transition: var(--transition-speed);
 }
 
-li a {
+.navbar > li a {
   display: block;
   color: black;
   text-align: center;
@@ -140,13 +145,17 @@ li a {
   transition: var(--transition-speed);
 }
 
-li a:hover {
+.navbar > li a:hover {
   background-color: rgb(230, 230, 230);
   transition: var(--transition-speed);
 }
 
 .active {
   background-color: rgb(200, 200, 200);
+}
+
+section > h1{
+  margin: auto;
 }
 
 @media only screen and (max-width: 1800px) {
@@ -171,12 +180,18 @@ li a:hover {
   header{
     font-size: 4.7em;
   }
+
+  .firstLight{
+    grid-column: 2 / 12;
+  }
 }
 
 @media only screen and (max-width: 1210px) {
   header{
     font-size: 3.85em;
   }
+  
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -184,7 +199,7 @@ li a:hover {
     font-size: 3em;
   }
   
-  li{
+  .navbar > li{
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -194,6 +209,11 @@ li a:hover {
   header{
     font-size: 2.3em;
   }
+
+  section > h1 {
+    font-size: 5em;
+  }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -214,6 +234,9 @@ li a:hover {
     grid-column: 2 / 7;
   }
 
+  .right {
+    grid-column: 6 / 12;
+  }
 
 }
 
@@ -236,6 +259,13 @@ li a:hover {
     grid-column: 2 /  12;
   }
 
+
+}
+
+@media only screen and (min-width: 800px) {
+  section > h1 {
+    font-size: 7em;
+  }
 
 }
 
