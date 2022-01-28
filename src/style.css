@@ -158,6 +158,10 @@ section > h1{
   margin: auto;
 }
 
+a {
+  color: aqua;
+}
+
 @media only screen and (max-width: 1800px) {
   header{
     font-size: 6em;
@@ -203,6 +207,10 @@ section > h1{
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+
+.rightTitle {
+  text-align: right;
 }
 
 @media only screen and (max-width: 800px) {
