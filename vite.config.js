@@ -15,7 +15,6 @@ module.exports = defineConfig({
       input: {
         main: resolve(root, 'index.html'),
         expertise: resolve(root, 'expertise', 'index.html'),
-        netwerk: resolve(root, 'netwerk', 'index.html'),
         over: resolve(root, 'over', 'index.html'),
         contact: resolve(root, 'contact', 'index.html'),
       }
