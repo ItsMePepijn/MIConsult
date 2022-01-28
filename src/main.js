@@ -60,8 +60,8 @@ function addBox() {
 
   box.position.set(x, y, z);
 
-  function timeline() {
-    let tl = gsap.timeline({onComplete: timeline})
+  function timeLine() {
+    let tl = gsap.timeline({onComplete: timeLine})
 
     const num = Math.floor(Math.random() * 2);
 
@@ -77,7 +77,7 @@ function addBox() {
       tl.to(box.position, {y: pos, duration: 2.3, delay: 0.8, ease: "power2.out"})
     }
   }
-  timeline();
+  timeLine();
   scene.add(box);
 }
 
